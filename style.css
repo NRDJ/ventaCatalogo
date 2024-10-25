@@ -23,6 +23,14 @@ header {
     padding: 20px;
     font-size: 2em;
 }
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 0.8em;
+
+}
 
 /* Estilos de navegación */
 nav {
@@ -47,10 +55,17 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.1em;
+    margin-right: 1em;
 }
 
 nav ul li:hover a {
     text-decoration: underline;
+    color: black;
+}
+
+.categoria a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Sección de categorías */
@@ -79,8 +94,7 @@ nav ul li:hover a {
 }
 
 .categoria img {
-    width: 100%;
-    border-bottom: 2px solid var(--primary-color);
+    width: 14em;
 }
 
 .categoria h3 {
