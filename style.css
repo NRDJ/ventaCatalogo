@@ -118,3 +118,47 @@ nav ul li:hover a {
         margin: 10px 0;
     }
 }
+
+
+/* cooperativo.html */
+.juegos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.juego {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 225px;
+    margin: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.juego:hover {
+    transform: scale(1.05);
+}
+
+.juego img {
+    width: 14em;
+}
+
+.juego h3 {
+    color: var(--primary-color);
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .juegos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
