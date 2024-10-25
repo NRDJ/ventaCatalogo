@@ -1,0 +1,106 @@
+/* Variables de color */
+:root {
+    --primary-color: #3b5998; /* Azul oscuro */
+    --secondary-color: #8b9dc3; /* Azul claro */
+    --accent-color: #f7f7f7; /* Blanco */
+    --font-color: #333; /* Gris oscuro */
+    --nav-bg-color: #4a69bd; /* Azul medio */
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--accent-color);
+    color: var(--font-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+}
+
+/* Estilos de navegación */
+nav {
+    background-color: var(--nav-bg-color);
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li:hover a {
+    text-decoration: underline;
+}
+
+/* Sección de categorías */
+.categorias {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.categoria {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    margin: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.categoria:hover {
+    transform: scale(1.05);
+}
+
+.categoria img {
+    width: 100%;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.categoria h3 {
+    color: var(--primary-color);
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .categorias {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
