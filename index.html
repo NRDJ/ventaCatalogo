@@ -15,7 +15,7 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="#acercaDe">Acerca de</a></li>
-                <li><a href="index.html">Contacto</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -56,6 +56,65 @@
                        a brindarte un servicio de calidad y a ayudarte a encontrar el juego perfecto para 
                        cada ocasión. </p>
             </div>
+        </section>
+        <section id="contacto" class="p-5">
+                <div class="contenido text-center mb-4">
+                    <h4 class="fw-bold">Contacto</h4>
+                    <form>
+                        <div class="row mb-3">
+                            <!-- Nombre completo -->
+                            <div class="col-md-6">
+                                <label for="fullName" class="form-label">Nombre Completo</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Ingresa tu nombre completo" required>
+                            </div>
+            
+                            <!-- Nombre de usuario -->
+                            <div class="col-md-6">
+                                <label for="username" class="form-label">Nombre de Usuario</label>
+                                <input type="text" class="form-control" id="username" placeholder="Nombre de usuario" required>
+                            </div>
+                        </div>
+            
+                        <div class="row mb-3">
+                            <!-- Correo electrónico -->
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                            </div>
+            
+                            <!-- Fecha de nacimiento -->
+                            <div class="col-md-6">
+                                <label for="birthdate" class="form-label">Fecha de Nacimiento</label>
+                                <input type="date" class="form-control" id="birthdate" required>
+                            </div>
+                        </div>
+            
+                        <!-- Dirección de despacho -->
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Dirección de Despacho</label>
+                            <input type="text" class="form-control" id="address" placeholder="Ingresa tu dirección de despacho" required>
+                        </div>
+            
+                        <div class="row mb-3">
+                            <!-- Contraseña -->
+                            <div class="col-md-6">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" required>
+                            </div>
+            
+                            <!-- Repetir contraseña -->
+                            <div class="col-md-6">
+                                <label for="confirmPassword" class="form-label">Repite tu Contraseña</label>
+                                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirma tu contraseña" required>
+                            </div>
+                        </div>
+            
+                        <!-- Botón de envío -->
+                        <div class="text-center mt-4">
+                            <button id="contacto-button" type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </form>
+                </div>
         </section>
     </main>
     <footer>

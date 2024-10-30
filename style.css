@@ -67,7 +67,7 @@ nav ul li:hover a {
 }
 
 /* Sección de categorías */
-.categorias, #acercaDe {
+.categorias, #acercaDe, #contacto {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -88,7 +88,7 @@ nav ul li:hover a {
     overflow: hidden;
 }
 
-#acercaDe h4{
+#acercaDe h4, #contacto h4{
     color: var(--primary-color);
 }
 
@@ -184,6 +184,21 @@ header h2 {
     display: inline-block;
     animation: rotate 1s infinite;
     color: purple;
+}
+
+#contacto-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#contacto-button:hover {
+    transform: scale(1.1);
+    background-color: var(--nav-bg-color); /* Replace with your desired hover color */
 }
 
 @keyframes rotate {
