@@ -189,7 +189,6 @@ header h2 {
 #contacto-button {
     background-color: var(--primary-color);
     color: white;
-    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -199,6 +198,18 @@ header h2 {
 #contacto-button:hover {
     transform: scale(1.1);
     background-color: var(--nav-bg-color); /* Replace with your desired hover color */
+}
+
+#limpiar-button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#limpiar-button:hover {
+    transform: scale(1.1);
+    background-color: rgb(92, 92, 92); /* Replace with your desired hover color */
 }
 
 @keyframes rotate {

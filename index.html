@@ -57,21 +57,21 @@
                        cada ocasión. </p>
             </div>
         </section>
-        <section id="contacto" class="p-5">
+        <section id="contacto">
                 <div class="contenido text-center mb-4">
                     <h4 class="fw-bold">Contacto</h4>
-                    <form>
+                    <form id="contactForm" onsubmit="return validateForm()">
                         <div class="row mb-3">
                             <!-- Nombre completo -->
                             <div class="col-md-6">
                                 <label for="fullName" class="form-label">Nombre Completo</label>
-                                <input type="text" class="form-control" id="fullName" placeholder="Ingresa tu nombre completo" required>
+                                <input type="text" class="form-control" id="fullName" required>
                             </div>
             
                             <!-- Nombre de usuario -->
                             <div class="col-md-6">
                                 <label for="username" class="form-label">Nombre de Usuario</label>
-                                <input type="text" class="form-control" id="username" placeholder="Nombre de usuario" required>
+                                <input type="text" class="form-control" id="username" required>
                             </div>
                         </div>
             
@@ -79,7 +79,7 @@
                             <!-- Correo electrónico -->
                             <div class="col-md-6">
                                 <label for="email" class="form-label">Correo Electrónico</label>
-                                <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                                <input type="email" class="form-control" id="email" required>
                             </div>
             
                             <!-- Fecha de nacimiento -->
@@ -91,34 +91,40 @@
             
                         <!-- Dirección de despacho -->
                         <div class="mb-3">
-                            <label for="address" class="form-label">Dirección de Despacho</label>
-                            <input type="text" class="form-control" id="address" placeholder="Ingresa tu dirección de despacho" required>
+                            <label for="address" class="form-label">Dirección de Despacho (Opcional)</label>
+                            <input type="text" class="form-control" id="address">
                         </div>
             
                         <div class="row mb-3">
                             <!-- Contraseña -->
                             <div class="col-md-6">
                                 <label for="password" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" required>
+                                <input type="password" class="form-control" id="password" required>
                             </div>
             
                             <!-- Repetir contraseña -->
                             <div class="col-md-6">
                                 <label for="confirmPassword" class="form-label">Repite tu Contraseña</label>
-                                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirma tu contraseña" required>
+                                <input type="password" class="form-control" id="confirmPassword" required>
                             </div>
                         </div>
             
-                        <!-- Botón de envío -->
+                        <!-- Botones -->
                         <div class="text-center mt-4">
-                            <button id="contacto-button" type="submit" class="btn btn-primary">Enviar</button>
+                                <button id="contacto-button" type="submit" class="btn btn-primary">Enviar</button> 
+                                <button id="limpiar-button" type="reset" class="btn btn-secondary">Limpiar</button> 
                         </div>
                     </form>
                 </div>
         </section>
     </main>
+
+
     <footer>
         <p>&copy; 2024 FunGames. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
