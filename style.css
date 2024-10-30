@@ -67,13 +67,14 @@ nav ul li:hover a {
 }
 
 /* Sección de categorías */
-.categorias {
+.categorias, #acercaDe {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    color: var(--primary-color);
 }
 
 .categoria {
@@ -87,6 +88,20 @@ nav ul li:hover a {
     overflow: hidden;
 }
 
+#acercaDe h4{
+    color: var(--primary-color);
+}
+
+.contenido {
+    color: black;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin: 15px;
+    padding: 20px;
+}
+
 .categoria:hover {
     transform: scale(1.05);
 }
@@ -98,7 +113,6 @@ nav ul li:hover a {
 .categoria h3 {
     color: var(--primary-color);
     padding: 10px;
-    font-size: 1.2em;
 }
 
 /* Responsive */
